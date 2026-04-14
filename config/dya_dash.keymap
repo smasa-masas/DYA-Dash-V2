@@ -127,6 +127,16 @@
             key-positions = <47 49>;
             bindings = <&kp C_VOL_UP>;
         };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <12 13>;
+        };
     };
 
     keymap {
@@ -157,12 +167,12 @@
             // | touch1  | touch2  | (touch3)  | (touch 4) |                                   | touch1  | touch2  | (touch3)  | (touch 4) |
 
             bindings = <
-&kp TAB       &kp Q         &kp W     &kp E     &kp R      &kp T       &kp Y         &kp U             &kp I     &kp O      &kp P     &kp LBKT
-&kp LCTRL     &kp A         &kp S     &kp D     &kp F      &kp G       &hbackspace   &jenter           &kp K     &kp L      &kp SEMI  &kp SQT
-&kp LSHIFT    &kp Z         &kp X     &kp C     &kp V      &kp B       &kp B         &kp N             &kp M     &kp COMMA  &kp DOT   &kp FSLH
-              &mo CONFIG_L  &kp LWIN  &kp LALT  &kp SPACE  &mo LEFT_L  &mo RIGHT_L   &kp SPACE         &kp RALT  &kp RWIN
-&out OUT_TOG  &out_bt_nxt                                              &kp UP        &kp LEFT          &kp DOWN  &kp RIGHT
-&none         &none         &none     &none                            &mo SCROLL_L  &mo TRACKBALL_L2  &none     &none
+&kp Q             &kp W             &kp E         &kp R     &kp T      &kp TAB     &kp BSPC       &kp Y             &kp U     &kp I      &kp O      &kp P
+&kp A             &kp S             &kp D         &kp F     &kp G      &kp LCTRL   &kp SEMICOLON  &hbackspace       &jenter   &kp K      &kp L      &kp MINUS
+&mt LEFT_SHIFT Z  &kp X             &kp C         &kp V     &kp B      &mo 7       &kp RSHFT      &kp B             &kp N     &kp M      &kp COMMA  &mt DOT LS(LC(INT_RO))
+                  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LALT  &kp SPACE  &mo LEFT_L  &mo RIGHT_L    &kp SPACE         &kp RALT  &kp RWIN
+&out OUT_TOG      &out_bt_nxt                                                      &kp UP         &kp LEFT          &kp DOWN  &kp RIGHT
+&none             &none             &none         &none                            &mo SCROLL_L   &mo TRACKBALL_L2  &none     &none
             >;
         };
 
@@ -217,24 +227,24 @@
         left_layer {
             display-name = "Left";
             bindings = <
-&kp ESC  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp RBKT
-&trans   &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp BACKSLASH
-&trans   &trans    &trans  &trans    &trans    &trans     &kp GRAVE  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp RSHIFT
-         &trans    &trans  &trans    &trans    &trans     &trans     &trans     &trans     &trans
-&trans   &trans                                           &trans     &trans     &trans     &trans
-&trans   &trans    &trans  &trans                         &trans     &trans     &trans     &trans
+&kp F4  &kp LS(N2)  &kp LS(N4)  &kp LS(N6)  &kp LS(N8)  &kp LS(N9)  &kp CARET  &kp KP_PLUS      &kp KP_MINUS  &kp N7  &kp N8  &kp N9
+&trans  &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6     &kp KP_MULTIPLY  &kp KP_SLASH  &kp N4  &kp N5  &kp N6
+&trans  &trans      &trans      &trans      &trans      &trans      &kp GRAVE  &kp KP_DOT       &kp N0        &kp N1  &kp N2  &kp N3
+        &trans      &trans      &trans      &trans      &trans      &trans     &trans           &trans        &trans
+&trans  &trans                                                      &trans     &trans           &trans        &trans
+&trans  &trans      &trans      &trans                              &trans     &trans           &trans        &trans
             >;
         };
 
         right_layer {
             display-name = "Right";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans      &kp PG_UP     &kp UP        &kp PG_DN  &trans  &kp C_AL_LOCK
-&trans  &trans  &trans  &trans  &trans  &trans  &trans      &kp LEFT      &kp DOWN      &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans     &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans      &trans        &trans        &trans
-&trans  &trans                                  &trans      &trans        &trans        &trans
-&trans  &trans  &trans  &trans                  &none       &none         &trans        &trans
+&trans          &trans            &trans  &trans  &trans  &trans  &trans      &kp PG_UP     &kp UP        &kp PG_DN  &kp RG(LS(S))  &kp C_AL_LOCK
+&trans          &trans            &trans  &trans  &trans  &trans  &trans      &kp LEFT      &kp DOWN      &kp RIGHT  &trans         &trans
+&kp LEFT_SHIFT  &trans            &trans  &trans  &trans  &trans  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans     &trans         &trans
+                &kp LEFT_CONTROL  &trans  &trans  &trans  &trans  &trans      &trans        &trans        &trans
+&trans          &trans                                            &trans      &trans        &trans        &trans
+&trans          &trans            &trans  &trans                  &none       &none         &trans        &trans
             >;
         };
 
