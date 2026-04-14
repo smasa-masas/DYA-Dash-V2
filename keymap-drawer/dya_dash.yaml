@@ -497,8 +497,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mkp LCLK'
+  - '&mkp RCLK'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -508,7 +508,7 @@ layers:
   - {t: ▽, type: trans}
   - '&mkp LCLK'
   - '&mkp RCLK'
-  - '&mkp MCLK'
+  - '&mkp RCLK'
   - Scroll
   - RALT
   - {t: ▽, type: trans}
@@ -520,7 +520,7 @@ layers:
   - {t: ▽, type: trans}
   - '&mkp MB4'
   - '&mkp LCLK'
-  - {t: ▽, type: trans}
+  - '&mkp LCLK'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -557,8 +557,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mkp LCLK'
+  - '&mkp RCLK'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -580,7 +580,7 @@ layers:
   - {t: ▽, type: trans}
   - '&mkp MCLK'
   - '&mkp LCLK'
-  - {t: ▽, type: trans}
+  - '&mkp LCLK'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
