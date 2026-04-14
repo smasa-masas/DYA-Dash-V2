@@ -1,0 +1,28 @@
+name: Draw ZMK keymaps
+on:
+  workflow_dispatch: # can be triggered manually
+  push: # automatically run on changes to following paths
+    paths:
+      - "config/*.keymap"
+      - "config/*.json"
+      - "keymap_drawer.config.yaml"
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # allow workflow to commit to the repo
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install keymap-drawer
+        run: pipx install "keymap-drawer"
+      - name: Draw keymap
+        run: |
+          make draw-keymap-v2
+          make draw-keymap-v3
+          git config user.name  "actions-user"
+          git config user.email "action@github.com"
+          git add .
+          git commit -m "Update keymap" || echo "No change to commit"
+          git push
