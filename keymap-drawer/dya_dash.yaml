@@ -1,44 +1,44 @@
 layout: {zmk_keyboard: dya_dash}
 layers:
   Base:
-  - TAB
   - Q
   - W
   - E
   - R
   - T
+  - TAB
+  - BSPC
   - Y
   - U
   - I
   - O
   - P
-  - '['
-  - LCTRL
   - A
   - S
   - D
   - F
   - G
+  - LCTRL
+  - ;
   - {t: H, s: BACKSPACE}
   - {t: J, s: ENTER}
   - K
   - L
-  - ;
-  - ''''
-  - LSHIFT
-  - Z
+  - '-'
+  - {t: Z, h: LEFT SHIFT}
   - X
   - C
   - V
   - B
+  - Config
+  - RSHFT
   - B
   - N
   - M
   - ','
-  - .
-  - /
-  - Config
-  - LWIN
+  - {t: Sft+Ctl+INT RO, h: .}
+  - LEFT CONTROL
+  - LEFT GUI
   - LALT
   - SPACE
   - Left
@@ -301,18 +301,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Left:
-  - ESC
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
+  - F4
+  - Sft+2
+  - Sft+4
+  - Sft+6
+  - Sft+8
+  - Sft+9
   - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - ']'
+  - KP PLUS
+  - KP MINUS
+  - '7'
+  - '8'
+  - '9'
   - {t: ▽, type: trans}
   - '1'
   - '2'
@@ -320,11 +320,11 @@ layers:
   - '4'
   - '5'
   - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - \
+  - KP MULTIPLY
+  - KP SLASH
+  - '4'
+  - '5'
+  - '6'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -332,11 +332,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '`'
-  - '-'
-  - '='
-  - '['
-  - ']'
-  - RSHIFT
+  - KP DOT
+  - '0'
+  - '1'
+  - '2'
+  - '3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -371,7 +371,7 @@ layers:
   - PG UP
   - ↑
   - PG DN
-  - {t: ▽, type: trans}
+  - Gui+Sft+S
   - AL LOCK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -385,7 +385,7 @@ layers:
   - →
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT SHIFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -397,7 +397,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT CONTROL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -454,16 +454,16 @@ layers:
   - ''
   - ''
   - ''
-  - 'LED
+  - {t: 'LED
 
-    Layer'
+      Layer', type: held}
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
-  - {type: held}
+  - ''
   - ''
   - ''
   - ''
@@ -851,3 +851,7 @@ combos:
   k: VOL DN
 - p: [47, 49]
   k: VOL UP
+- p: [0, 1]
+  k: ESCAPE
+- p: [12, 13]
+  k: TAB
