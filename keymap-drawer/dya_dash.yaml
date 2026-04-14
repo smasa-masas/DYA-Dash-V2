@@ -42,8 +42,8 @@ layers:
   - LALT
   - SPACE
   - Left
-  - Right
-  - SPACE
+  - {t: BACKSPACE, h: Right}
+  - ENTER
   - RALT
   - RWIN
   - OUT TOG
@@ -303,8 +303,8 @@ layers:
   Left:
   - F4
   - Sft+2
-  - Sft+4
   - Sft+6
+  - Sft+5
   - Sft+8
   - Sft+9
   - ^
