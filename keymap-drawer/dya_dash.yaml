@@ -39,9 +39,9 @@ layers:
   - {t: Sft+INT RO, h: .}
   - LEFT CONTROL
   - LEFT GUI
-  - LALT
+  - {t: LANGUAGE 2, h: LALT}
   - SPACE
-  - Left
+  - {t: LANGUAGE 1, h: Left}
   - {t: BACKSPACE, h: Right}
   - ENTER
   - RALT
