@@ -314,11 +314,11 @@ layers:
   - '8'
   - '9'
   - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+1
+  - Sft+/
   - '6'
   - KP MULTIPLY
   - KP SLASH
@@ -389,8 +389,8 @@ layers:
   - LEFT CONTROL
   - ;
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BRIGHTNESS INC
+  - BRIGHTNESS DEC
   - MUTE
   - VOL DN
   - VOL UP
