@@ -32,18 +32,18 @@ layers:
   - B
   - Config
   - RSHFT
-  - B
   - N
   - M
   - ','
-  - {t: Sft+INT RO, h: .}
+  - .
+  - {t: Sft+INT RO, h: LEFT SHIFT}
   - LEFT CONTROL
   - LEFT GUI
   - {t: LANGUAGE 2, h: LALT}
-  - SPACE
+  - {t: SPACE, h: Left}
   - {t: LANGUAGE 1, h: Left}
-  - {t: BACKSPACE, h: Right}
-  - ENTER
+  - BACKSPACE
+  - {t: ENTER, h: Right}
   - RALT
   - RWIN
   - OUT TOG
@@ -340,8 +340,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -367,11 +367,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Sft+Gui+S
   - {t: ▽, type: trans}
-  - PG UP
-  - ↑
-  - PG DN
-  - Gui+Sft+S
+  - Ctl+PAGE UP
+  - UP ARROW
+  - Ctl+PAGE DOWN
   - AL LOCK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -380,13 +380,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ←
-  - ↓
-  - →
   - {t: ▽, type: trans}
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
   - {t: ▽, type: trans}
   - LEFT SHIFT
-  - {t: ▽, type: trans}
+  - LEFT CONTROL
   - ;
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -402,8 +402,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
