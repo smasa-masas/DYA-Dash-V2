@@ -172,12 +172,12 @@
             // | touch1  | touch2  | (touch3)  | (touch 4) |                                   | touch1  | touch2  | (touch3)  | (touch 4) |
 
             bindings = <
-&kp Q             &kp W             &kp E         &kp R                &kp T      &kp TAB                &kp BSPC               &kp Y             &kp U     &kp I      &kp O      &kp P
-&kp A             &kp S             &kp D         &kp F                &kp G      &kp LCTRL              &kp LS(SLASH)          &hbackspace       &jenter   &kp K      &kp L      &kp MINUS
-&mt LEFT_SHIFT Z  &kp X             &kp C         &kp V                &kp B      &mo 7                  &kp RSHFT              &kp B             &kp N     &kp M      &kp COMMA  &mt DOT LS(INT_RO)
-                  &kp LEFT_CONTROL  &kp LEFT_GUI  &mt LALT LANGUAGE_2  &kp SPACE  &lt LEFT_L LANGUAGE_1  &lt RIGHT_L BACKSPACE  &kp ENTER         &kp RALT  &kp RWIN
-&out OUT_TOG      &out_bt_nxt                                                                            &kp UP                 &kp LEFT          &kp DOWN  &kp RIGHT
-&none             &none             &none         &none                                                  &mo SCROLL_L           &mo TRACKBALL_L2  &none     &none
+&kp Q             &kp W             &kp E         &kp R                &kp T        &kp TAB                &kp BSPC       &kp Y             &kp U     &kp I      &kp O       &kp P
+&kp A             &kp S             &kp D         &kp F                &kp G        &kp LCTRL              &kp LS(SLASH)  &hbackspace       &jenter   &kp K      &kp L       &kp MINUS
+&mt LEFT_SHIFT Z  &kp X             &kp C         &kp V                &kp B        &mo 7                  &kp RSHFT      &kp N             &kp M     &kp COMMA  &kp PERIOD  &mt LEFT_SHIFT LS(INT_RO)
+                  &kp LEFT_CONTROL  &kp LEFT_GUI  &mt LALT LANGUAGE_2  &lt 5 SPACE  &lt LEFT_L LANGUAGE_1  &kp BACKSPACE  &lt 6 ENTER       &kp RALT  &kp RWIN
+&out OUT_TOG      &out_bt_nxt                                                                              &kp UP         &kp LEFT          &kp DOWN  &kp RIGHT
+&none             &none             &none         &none                                                    &mo SCROLL_L   &mo TRACKBALL_L2  &none     &none
             >;
         };
 
@@ -244,12 +244,12 @@
         right_layer {
             display-name = "Right";
             bindings = <
-&trans          &trans            &trans    &trans  &trans  &trans  &trans      &kp PG_UP     &kp UP        &kp PG_DN  &kp RG(LS(S))  &kp C_AL_LOCK
-&trans          &trans            &trans    &trans  &trans  &trans  &trans      &kp LEFT      &kp DOWN      &kp RIGHT  &trans         &trans
-&kp LEFT_SHIFT  &trans            &kp SEMI  &trans  &trans  &trans  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans     &trans         &trans
-                &kp LEFT_CONTROL  &trans    &trans  &trans  &trans  &trans      &trans        &trans        &trans
-&trans          &trans                                              &trans      &trans        &trans        &trans
-&trans          &trans            &trans    &trans                  &none       &none         &trans        &trans
+&trans          &trans            &trans    &trans  &trans  &trans  &kp LS(LG(S))  &trans        &kp LC(PAGE_UP)  &kp UP_ARROW    &kp LC(PAGE_DOWN)  &kp C_AL_LOCK
+&trans          &trans            &trans    &trans  &trans  &trans  &trans         &trans        &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW    &trans
+&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp SEMI  &trans  &trans  &trans  &kp C_MUTE     &kp C_VOL_DN  &kp C_VOL_UP     &trans          &trans             &trans
+                &kp LEFT_CONTROL  &trans    &trans  &trans  &trans  &trans         &trans        &trans           &trans
+&trans          &trans                                              &trans         &trans        &trans           &trans
+&trans          &trans            &trans    &trans                  &none          &none         &trans           &trans
             >;
         };
 
